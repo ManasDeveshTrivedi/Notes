@@ -58,3 +58,10 @@ createBtn.addEventListener("click", () => {
     let img = document.createElement("img");
     let time = document.createElement("small");
 
+    inputBox.className = "input-box";
+    text.className = "note-text";
+    text.setAttribute("contenteditable", "true");
+
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    inputBox.style.backgroundColor = randomColor;
+
