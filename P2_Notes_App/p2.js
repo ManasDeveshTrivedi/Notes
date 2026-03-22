@@ -49,3 +49,12 @@ function fixOldNotes(){
     });
 }
 
+showNotes();
+fixOldNotes();
+
+createBtn.addEventListener("click", () => {
+    let inputBox = document.createElement("div");
+    let text = document.createElement("div");
+    let img = document.createElement("img");
+    let time = document.createElement("small");
+
