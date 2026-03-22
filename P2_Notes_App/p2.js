@@ -36,3 +36,16 @@ function fixOldNotes(){
             note.appendChild(text);
         }
 
+        if(!note.querySelector("small")){
+            let time = document.createElement("small");
+            time.innerText = new Date().toLocaleString();
+            note.appendChild(time);
+        }
+        if(!note.querySelector("img")){
+            let img = document.createElement("img");
+            img.src = "./delete.png";
+            note.appendChild(img);
+        }
+    });
+}
+
