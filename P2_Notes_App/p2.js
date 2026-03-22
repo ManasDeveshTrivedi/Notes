@@ -89,3 +89,8 @@ notesContainer.addEventListener("click", function(e){
 });
 
 
+let timeout;
+notesContainer.addEventListener("input", () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(updateStorage, 300);
+});
