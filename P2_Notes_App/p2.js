@@ -11,3 +11,12 @@ const colors = [
     "#b8c0ff"
 ];
 
+function showNotes(){
+    const saved = localStorage.getItem("notes");
+    if(saved){
+        notesContainer.innerHTML = saved;
+    }
+}
+function updateStorage(){
+    localStorage.setItem("notes", notesContainer.innerHTML);
+}
