@@ -65,3 +65,19 @@ createBtn.addEventListener("click", () => {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     inputBox.style.backgroundColor = randomColor;
 
+    img.src = "./delete.png";
+
+    time.innerText = new Date().toLocaleString();
+
+    inputBox.appendChild(text);
+    inputBox.appendChild(time);
+    inputBox.appendChild(img);
+
+    notesContainer.appendChild(inputBox);
+
+    text.focus();
+
+    updateStorage();
+});
+
+
