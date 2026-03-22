@@ -1,0 +1,15 @@
+Notes App
+
+A simple Notes App built using HTML, CSS, and JavaScript. It allows users to create, edit, and delete notes with automatic saving using localStorage.
+
+Features:
+Create, edit, and delete notes
+Auto-save using localStorage
+Timestamp for each note
+Random note colors
+Responsive and lightweight UI
+
+Tech Stack
+HTML5
+CSS3
+JavaScript
